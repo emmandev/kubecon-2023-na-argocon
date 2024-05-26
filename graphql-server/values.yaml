@@ -7,5 +7,7 @@ databaseUrl: "mysql://rbs_staging:Jodk7MELXFCet_AgfE7mVy.Dqpofr6go@testdatabase.
 image:
   repository: "914958427285.dkr.ecr.us-east-1.amazonaws.com/responsibid-server"
   tag: develop-latest
+  pullSecret:
+    name: responsibid-staging
 
 port: "3333"
