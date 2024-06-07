@@ -1,0 +1,10 @@
+---
+namespace: dev
+replicas:
+  - name: demo-deployment
+    count: 2
+images:
+  - name: 914958427285.dkr.ecr.us-east-1.amazonaws.com/demo
+    newTag: 0.2.0
+resources:
+  - ../../../demo-base
