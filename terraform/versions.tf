@@ -56,7 +56,7 @@ provider "argocd" {
 data "aws_caller_identity" "current" {}
 data "aws_availability_zones" "available" {}
 locals {
-  name   = "ex-${replace(basename(path.cwd), "_", "-")}"
+  name   = "responsibid-gitops"
   region = var.region
   tags = {
     Blueprint  = local.name
